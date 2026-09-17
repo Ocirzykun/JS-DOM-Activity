@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ocirzy Betacura</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#home" class="logo">Ocirzy</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn" aria-label="Toggle menu">
+            <i class='bx bx-menu icon-menu'></i>
+            <i class='bx bx-x icon-close'></i>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <button class="dropdown-btn" id="dropdownBtn">Services <i class='bx bx-chevron-down dropdown-arrow'></i></button>
+                    <ul id="dropdownMenu" class="dropdown-menu">
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Development</a></li>
+                        <li><a href="#services">Graphic Design</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn" id="dropdownBtn2">Industries <i class='bx bx-chevron-down dropdown-arrow'></i></button>
+                    <ul id="dropdownMenu2" class="dropdown-menu">
+                        <li><a href="#industries">E-Commerce</a></li>
+                        <li><a href="#industries">Healthcare</a></li>
+                        <li><a href="#industries">Real Estate</a></li>
+                    </ul>
+                </li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="header-cta">Let's Talk</a>
+    </header>
+
+    <!-- HERO / SERVICE DETAILS -->
+    <section class="home" id="home">
+        <p class="hero-subtitle">Portfolio - Services</p>
+        <h1>Service <span>Details</span></h1>
+        <p class="hero-desc">Passionate about creating impactful digital experiences through design, development, and creative strategy.</p>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Web Design</button>
+            <button class="filter-btn" data-filter="app">App Design</button>
+            <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+            <button class="filter-btn" data-filter="wireframe">Wireframe</button>
+        </div>
+
+        <div class="hero-images">
+            <div class="hero-img-card">
+                <img src="images/AKO.jpg" alt="Project showcase">
+            </div>
+            <div class="hero-img-card">
+                <img src="images/1.jpg" alt="Project showcase">
+            </div>
+            <div class="hero-img-card">
+                <img src="images/AKO.jpg" alt="Project showcase">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-header">
+            <div class="about-icon"><i class='bx bx-user'></i></div>
+            <div>
+                <h2>About <span>Application Design Services</span></h2>
+            </div>
+        </div>
+        <div class="about-content">
+            <p>We are a team of passionate designers and developers who craft exceptional digital experiences. Our approach combines creative vision with technical expertise to deliver products that stand out in the market.</p>
+            <p>With years of experience in the industry, we specialize in creating user-centered designs that drive engagement and deliver results. Every project we take on is a reflection of our commitment to excellence.</p>
+            <p>Our mission is to help businesses transform their ideas into reality through innovative design and cutting-edge technology solutions.</p>
+        </div>
+    </section>
+
+    <!-- SERVICES INCLUDE -->
+    <section class="services" id="services">
+        <div class="section-title">
+            <h2>Services <span>Include</span></h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class='bx bx-code-alt'></i></div>
+                <h4>Frontend Development</h4>
+                <p>Building responsive and performant web interfaces with modern technologies.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class='bx bx-palette'></i></div>
+                <h4>UI/UX Design</h4>
+                <p>Creating intuitive and visually stunning user experiences.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class='bx bx-mobile-alt'></i></div>
+                <h4>Mobile Development</h4>
+                <p>Developing cross-platform mobile applications.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class='bx bx-layout'></i></div>
+                <h4>Wireframing</h4>
+                <p>Creating wireframes and prototypes for effective planning.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP 8 INDUSTRIES -->
+    <section class="industries" id="industries">
+        <div class="section-title">
+            <h2>Top 8 Industries <span>We Cover in App Design</span></h2>
+        </div>
+        <div class="industries-grid">
+            <div class="industry-card">
+                <div class="industry-icon"><i class='bx bx-cart'></i></div>
+                <h4>E-Commerce</h4>
+                <p>Online shopping platforms and marketplace solutions.</p>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon"><i class='bx bx-health'></i></div>
+                <h4>Healthcare</h4>
+                <p>Medical apps, telehealth, and patient management systems.</p>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon"><i class='bx bx-building-house'></i></div>
+                <h4>Real Estate</h4>
+                <p>Property listings, virtual tours, and real estate platforms.</p>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon"><i class='bx bx-restaurant'></i></div>
+                <h4>Education</h4>
+                <p>E-learning platforms and educational tools.</p>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon"><i class='bx bx-dollar'></i></div>
+                <h4>Finance</h4>
+                <p>Banking apps, fintech solutions, and financial tools.</p>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon"><i class='bx bx-food-menu'></i></div>
+                <h4>Hospitality</h4>
+                <p>Hotel booking, restaurant ordering, and travel apps.</p>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon"><i class='bx bx-run'></i></div>
+                <h4>Fitness</h4>
+                <p>Workout trackers, health monitoring, and fitness platforms.</p>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon"><i class='bx bx-football'></i></div>
+                <h4>Sports</h4>
+                <p>Sports analytics, team management, and fan engagement apps.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES BENEFITS -->
+    <section class="benefits">
+        <div class="section-title">
+            <h2>Services <span>Benefits</span></h2>
+        </div>
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <i class='bx bx-check-circle'></i>
+                <span>Professional and modern design solutions tailored to your business needs.</span>
+            </div>
+            <div class="benefit-item">
+                <i class='bx bx-check-circle'></i>
+                <span>Enhanced user experience through research-driven design methodologies.</span>
+            </div>
+            <div class="benefit-item">
+                <i class='bx bx-check-circle'></i>
+                <span>Responsive and cross-platform compatible solutions for maximum reach.</span>
+            </div>
+            <div class="benefit-item">
+                <i class='bx bx-check-circle'></i>
+                <span>Scalable architecture that grows with your business requirements.</span>
+            </div>
+            <div class="benefit-item">
+                <i class='bx bx-check-circle'></i>
+                <span>Timely delivery and ongoing support throughout the project lifecycle.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <h2>Let's Create an <span>Amazing</span></h2>
+        <h2 class="cta-highlight">Project Together!</h2>
+        <div class="cta-images">
+            <div class="cta-img"><img src="images/AKO.jpg" alt="Project"></div>
+            <div class="cta-img"><img src="images/1.jpg" alt="Project"></div>
+            <div class="cta-img"><img src="images/AKO.jpg" alt="Project"></div>
+            <div class="cta-img"><img src="images/1.jpg" alt="Project"></div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-thumb"><i class='bx bx-laptop'></i></div>
+                <div class="portfolio-info">
+                    <span class="tag">Frontend</span>
+                    <h4>Personal Portfolio Website</h4>
+                    <p>A fully responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                    <div class="portfolio-links">
+                        <a href="#" title="Live Demo"><i class='bx bx-link-external'></i></a>
+                        <a href="#" title="GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-thumb"><i class='bx bx-store'></i></div>
+                <div class="portfolio-info">
+                    <span class="tag">Web Design</span>
+                    <h4>E-Commerce Landing Page</h4>
+                    <p>A modern e-commerce homepage with product showcase and responsive layout.</p>
+                    <div class="portfolio-links">
+                        <a href="#" title="Live Demo"><i class='bx bx-link-external'></i></a>
+                        <a href="#" title="GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-thumb"><i class='bx bx-mobile-alt'></i></div>
+                <div class="portfolio-info">
+                    <span class="tag">UI/UX</span>
+                    <h4>Mobile App UI Design</h4>
+                    <p>A clean and minimal mobile app UI design for a productivity tool.</p>
+                    <div class="portfolio-links">
+                        <a href="#" title="Live Demo"><i class='bx bx-link-external'></i></a>
+                        <a href="#" title="Figma"><i class='bx bxl-figma'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-left">
+            <div class="contact-card">
+                <h2>Let's Talk for <span>Your</span></h2>
+                <h2 class="contact-highlight">Next Projects</h2>
+                <p class="contact-email">Email: <strong>ocirzybetacura@gmail.com</strong></p>
+            </div>
+        </div>
+        <div class="contact-right">
+            <h2>Contact <span>Me</span></h2>
+            <div class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name *</label>
+                        <input type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" placeholder="Enter Email Address">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone *</label>
+                        <input type="text" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label>City, Designation *</label>
+                        <input type="text" placeholder="Enter Your Designation">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Budget Range (USD) *</label>
+                        <input type="text" placeholder="$500 - $1000">
+                    </div>
+                    <div class="form-group">
+                        <label>Country *</label>
+                        <input type="text" placeholder="Enter Your Country">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Your Message *</label>
+                    <textarea placeholder="Write Your Message..."></textarea>
+                </div>
+                <button class="btn-submit">
+                    <i class='bx bx-send'></i> Send Message
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <h2>Let's <span>Connect</span> there</h2>
+            <a href="#contact" class="header-cta footer-cta">Hire Me</a>
+        </div>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">Ocirzy</div>
+                <p>Passionate designer and developer creating impactful digital experiences.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Rickolodeonnn" title="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/ririricko/" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" title="TikTok"><i class='bx bxl-tiktok'></i></a>
+                    <a href="#" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>+63 981 518 8422</p>
+                <p>ocirzybetacura@gmail.com</p>
+                <p>Philippines</p>
+            </div>
+            <div class="footer-col">
+                <h4>Our Certifications</h4>
+                <div class="cert-badges">
+                    <div class="cert-badge"><i class='bx bx-badge-check'></i></div>
+                    <div class="cert-badge"><i class='bx bx-badge-check'></i></div>
+                    <div class="cert-badge"><i class='bx bx-badge-check'></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTTOM BAR -->
+    <div class="bottom-bar">
+        <div class="bottom-left">
+            <span>Designed by <span class="green">Ocirzy</span></span>
+            <span class="copyright">&copy; Copyright 2026. All Rights Reserved.</span>
+        </div>
+        <div class="bottom-social">
+            <a href="https://www.facebook.com/Rickolodeonnn"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/ririricko/"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
